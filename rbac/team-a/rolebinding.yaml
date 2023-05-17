@@ -9,5 +9,5 @@ roleRef:
   name: selogerproxy-digital-nonprod-rw
 subjects:
   - apiGroup: rbac.authorization.k8s.io
-    kind: Role
+    kind: User
     name: arn:aws:iam::220766614489:role/digital-nonprod-accessselogerproxy-iam-role
