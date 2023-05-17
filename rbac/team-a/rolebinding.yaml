@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: selogerproxy
+  namespace: selogerproxy-staging
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: selogerproxy-digital-nonprod-rw
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: Role
+    name: arn:aws:iam::220766614489:role/digital-nonprod-accessselogerproxy-iam-role
